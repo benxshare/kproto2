@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html kp-app="demo">
+    <head>
+        <title>an app demo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="libs/jquery.min.js"></script>
+        <script type="text/javascript" src="libs/kproto.debug.js"></script>
+
+        <link rel="stylesheet" href="css/mobile.css" />
+
+    </head>
+    <body  kp-controller="mianController">
+        <div class="mobile">
+            <div  class="section">
+                <div class="hd">
+                    <div class="hdl">
+                        <h2 id="hd-title">Wechat</h2>
+                    </div>
+                    <div class="hdm">
+
+                    </div>
+                    <div class="hdr">
+                        <a class="icon-small ico-search">Seek</a>
+                        <a class="icon-small ico-add">New</a>
+                    </div>
+                </div>
+                <div class="bd trans-region">
+                    <div id="wechat" class="list trans-item">
+                        <dl class="item">
+                            <dt class="icon-large round-box"></dt><dd>
+                                <h3 class="title">John doe</h3>
+                                <p class="desc">This is a illusion man, who never show up.</p>
+                                <p class="itd">July 9</p>
+                            </dd>
+                        </dl>
+                        <dl class="item">
+                            <dt class="icon-large round-box"></dt><dd>
+                                <h3 class="title">John doe</h3>
+                                <p class="desc">This is a illusion man, who never show up.</p>
+                                <p class="itd">July 9</p>
+                            </dd>
+                        </dl>
+                        <dl class="item">
+                            <dt class="icon-large round-box"></dt><dd>
+                                <h3 class="title">John doe</h3>
+                                <p class="desc">This is a illusion man, who never show up.</p>
+                                <p class="itd">July 9</p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div id="contacts" class="list trans-item">
+                        <p>Contacts</p>
+                    </div>
+                    <div id="discover" class="list trans-item">
+                        <p>Discover</p>
+                    </div>
+                    <div id="myinfo" class="list trans-item">
+                        <p>My Info</p>
+                    </div>
+                </div>
+                <div class="ft">
+                    <div class="ft-tab">
+                        <dl kp-tap="active_navigator" kp-params="#wechat">
+                            <dt class="icon icon-chat"></dt>
+                            <dd>we chat</dd>
+                        </dl>
+                        <dl kp-tap="active_navigator" kp-pramas="#contact">
+                            <dt class="icon icon-contact"></dt>
+                            <dd>contacts</dd>
+                        </dl>
+                        <dl kp-tap="active_navigator" kp-pramas="#discover">
+                            <dt class="icon icon-discover"></dt>
+                            <dd>discover</dd>
+                        </dl>
+                        <dl kp-tap="active_navigator" kp-pramas="#myinfo">
+                            <dt class="icon icon-personal"></dt>
+                            <dd>me</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
